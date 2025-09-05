@@ -1,0 +1,6 @@
+pydantic==2.10.3
+python-dateutil==2.9.0.post0
+fastapi
+requests
+uvicorn
+pytz

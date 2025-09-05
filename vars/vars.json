@@ -1,0 +1,59 @@
+[
+    {
+        "var": "ioTemp",
+        "topic": "liveValue.diagnostics.this.io.0.temperature.cpu.",
+        "type": "float",
+        "size": 1,
+        "writable": false
+    }, 
+    {
+        "var": "cpuUsage",
+        "topic": "liveValue.diagnostics.this.core.0.cpuUsage|.",
+        "type": "float",
+        "size": 1,
+        "writable": false
+    },
+    {
+        "var": "configRunningPeriod",
+        "topic": "liveValue.postvalidConfig.this.courseApp.0.courseApp.configrunningperiod.",
+        "type": "integer",
+        "size": 1,
+        "writable": true
+    },
+    {
+        "var": "runCounter",
+        "topic": "liveValue.production.this.courseApp.0.runcounter.",
+        "type": "integer",
+        "size": 1,
+        "writable": true
+    },
+    {
+        "var": "lastRunTime",
+        "topic": "liveValue.production.this.courseApp.0.lastruntime.",
+        "type": "integer",
+        "size": 1,
+        "writable": true
+    },
+    {
+        "var": "cpuUsageCurrent",
+        "topic": "liveValue.production.this.courseApp.0.cpuusagecurrent.",
+        "type": "float",
+        "size": 1,
+        "writable": true
+    },
+    {
+        "var": "cpuUsageMax",
+        "topic": "liveValue.production.this.courseApp.0.cpuusagemax.",
+        "type": "float",
+        "size": 1,
+        "writable": true
+    },
+    {
+        "var": "cpuUsageMin",
+        "topic": "liveValue.production.this.courseApp.0.cpuusagemin.",
+        "type": "float",
+        "size": 1,
+        "writable": true
+    } 
+]
+

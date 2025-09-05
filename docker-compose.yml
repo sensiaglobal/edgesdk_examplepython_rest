@@ -1,0 +1,33 @@
+---
+services:
+  courseapp:
+    image: courseapp:0.0.0
+    container_name: courseApp
+    read_only: true
+    labels:
+      com.sensiaglobal.image.config_manager_reg_name: courseApp
+    restart: on-failure
+    networks:
+      - network1
+    ports:
+      - "8100:8100"
+    environment:
+      HCC2_SDK2_API_URL: "http://hcc2RestServer_0:7071/api/v1"
+      SDK2_CALLBACK_URL: "http://courseapp:8100/webhook/v1"
+    tmpfs:
+      - /tmp:uid=5678,gid=5678
+    volumes:
+      - courseapp_config_vol:/app/config
+      - courseapp_data_vol:/app/data
+networks:
+  network1:
+    name: edgenet
+    external: true
+
+volumes:
+  courseapp_config_vol:
+    name: courseapp_config_vol
+  courseapp_data_vol:
+    name: courseapp_data_vol
+
+...

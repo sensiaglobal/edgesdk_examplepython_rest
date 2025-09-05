@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "HCC2_SDK2_API_URL": "http://10.0.0.38:7071/api/v1",
+                "SDK2_CALLBACK_URL": "http://10.80.248.171:8100/webhook/v1"
+            },
+            "args": []
+        }
+    ]
+}
